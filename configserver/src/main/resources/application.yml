@@ -10,9 +10,9 @@ spring:
     config:
       server:
         git:
-          uri: https://githubfast.com/southwind9801/orderingsystem.git #git仓库地址
-          username: root #git仓库用户名
-          password: root #git仓库密码
+          uri: https://githubfast.com/manongshihao/orderingsystem-master.git #git仓库地址
+          username: pjj #git仓库用户名
+          password: 123456 #git仓库密码
           search-paths: config
       label: master
 eureka:
