@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    bus:
+      trace:
+        enable: true
+    config:
+      server:
+        git:
+          uri: https://githubfast.com/southwind9801/orderingsystem.git #git仓库地址
+          username: root #git仓库用户名
+          password: root #git仓库密码
+          search-paths: config
+      label: master #仓库的分支
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
