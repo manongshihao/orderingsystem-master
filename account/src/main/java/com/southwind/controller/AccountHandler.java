@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/account")
 public class AccountHandler {
-
     @Autowired
     private UserRepository userRepository;
     @Autowired

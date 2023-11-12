@@ -15,10 +15,8 @@ import java.util.Date;
 @Controller
 @RequestMapping("/account")
 public class AccountHandler {
-
     @Autowired
     private AccountFeign accountFeign;
-
     @PostMapping("/login")
     public String login(@RequestParam("username") String username, @RequestParam("password") String password, @RequestParam("type") String type, HttpSession session){
         Account account = accountFeign.login(username,password,type);
@@ -41,7 +39,6 @@ public class AccountHandler {
         }
         return target;
     }
-
     @GetMapping("/logout")
     public String logout(HttpSession session){
         session.invalidate();
